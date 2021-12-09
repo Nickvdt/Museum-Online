@@ -1,0 +1,45 @@
+.museum_wrap {
+    background-color: #222222;
+}
+
+.museum__title {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.museum__subtitle {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.museum {
+    color: white;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+}
+
+.museum p {
+    margin-top: 2rem;
+    width: clamp(640px, 20rem, 50vw);
+    padding: 0 0;
+    font-size: 1.25rem;
+}
+
+.button:hover {
+    background-color: var(--yellow-dark)
+}
+
+.button {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    background-color: var(--yellow);
+    color: var(--offblack);
+
+    font-weight: bold;
+}
+
+.ticketbutton {
+    display: inline-block;
+    margin-top: 1rem;
+}

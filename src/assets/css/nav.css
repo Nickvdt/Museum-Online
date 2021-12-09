@@ -45,5 +45,5 @@
 }
 
 .navwrap nav .links a:hover {
-    background: black;
+    color: var(--yellow);
 }

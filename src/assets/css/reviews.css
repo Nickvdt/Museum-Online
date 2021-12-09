@@ -1,0 +1,29 @@
+.reviews {
+    background-color: black;
+}
+
+.reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 0;
+}
+
+.reviews__review {
+    color: white;
+    padding: 2rem 2rem;
+    flex: 1 1 2rem;
+}
+.reviews__review-author {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.reviews__review-date {
+    font-size: 0.9rem;
+    color: rgb(209, 209, 209);
+}
+
+.review__review-body {
+    /* padding: 3rem; */
+    font-size: 1.20rem;
+}

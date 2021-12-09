@@ -1,0 +1,40 @@
+footer {
+    background-color: #080A0F;
+    padding: 3rem 0;
+    color: white;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer__section {
+    padding: 2rem;
+}
+
+.footer__section div {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer__section ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 0.2rem;
+}
+
+.footer__section ul li {
+    line-height: 1.5rem;
+    color: #B8B8B8;
+}
+
+.footer__section ul li a {
+    color: white;
+    text-decoration: none;
+    color: #B8B8B8;
+}
+.footer__section ul li a:hover {
+    color: white;
+}

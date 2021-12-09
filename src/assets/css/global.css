@@ -7,6 +7,7 @@ html,body {
 :root {
     --container-width: 1280px;
     --yellow: #FADB5F;
+    --yellow-dark: #e0c557;
     --offblack: #222222;
 }
 

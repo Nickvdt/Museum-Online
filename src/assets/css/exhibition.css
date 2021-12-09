@@ -105,6 +105,11 @@
     margin-bottom: 3rem;
     font-size: 1.25rem;
 }
+
+.exhibition .row .content .buttons .action:hover {
+    background-color: var(--yellow-dark)
+}
+
 .exhibition .row .content .buttons .action {
     text-decoration: none;
     padding: 1rem 1.5rem;
@@ -116,4 +121,7 @@
 .exhibition .row .content .buttons .secondary {
     margin-left: 1rem;
     color: white;
+}
+.exhibition .row .content .buttons .secondary:hover {
+    color: rgb(226, 226, 226);
 }
