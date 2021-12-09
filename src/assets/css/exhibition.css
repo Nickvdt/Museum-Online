@@ -1,0 +1,119 @@
+.exhibition {
+    background: black;
+}
+
+.exhibition nav {
+    display: flex;
+}
+
+.exhibition nav .item {
+    color: white;
+    padding: 3.5rem 1.875rem;
+    margin-right: 2rem;
+    text-decoration: none;
+    /* flex: 1 1 0; */
+}
+
+/* .exhibition nav .item:first-of-type {
+    padding-left: 1.875rem;
+}
+.exhibition nav .item:last-of-type {
+    padding-right: 1.875rem;
+} */
+
+.exhibition nav .item:hover .title {
+    color: var(--yellow);
+}
+
+.exhibition nav .item.active .title {
+    color: var(--yellow);
+}
+
+.exhibition nav .item .title {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.exhibition nav .item .subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.exhibition .row {
+    display: grid;
+    gap: 0;
+    grid-template-columns: auto calc(var(--container-width) / 2) 50vw;
+}
+.exhibition .row.alt {
+    grid-template-columns: 50vw calc(var(--container-width) / 2) auto;
+}
+
+@media screen and (max-width: 1280px) {
+    /* TODO Figure out specificity issue */
+    .exhibition .row .content {
+        grid-column: 1 !important;
+    }
+    .exhibition .row.alt .content {
+        grid-column: 2 !important;
+    }
+    .exhibition .row {
+        grid-template-columns: 1fr 50vw;
+    }
+    .exhibition .row.alt {
+        grid-template-columns: 50vw 1fr;
+    }
+}
+
+
+.exhibition .row .content {
+    flex: 1 1 0px;
+    color: white;
+    padding: 1.25rem 2rem;
+    padding-right: 4rem;
+    grid-column: 2;
+}
+.exhibition .row.alt .content {
+    grid-column: 2;
+}
+
+.exhibition .row .image {
+    background-size: cover;
+    background-position: center;
+}
+.exhibition .row.alt .image {
+    grid-column: 1;
+}
+
+
+.exhibition .row .content .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+.exhibition .row .content .subtitle {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.exhibition .row .content p {
+    font-size: 1.25rem;
+    line-height: 1.54508497186rem; 
+    padding: 1.5rem 0;
+}
+
+.exhibition .row .content .buttons {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+}
+.exhibition .row .content .buttons .action {
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    background-color: var(--yellow);
+    color: var(--offblack);
+
+    font-weight: bold;
+}
+.exhibition .row .content .buttons .secondary {
+    margin-left: 1rem;
+    color: white;
+}

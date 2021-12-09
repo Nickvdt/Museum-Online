@@ -10,6 +10,7 @@
     pointer-events: none;
     grid-row-start: 1;
     grid-column-start: 1;
+    height: calc(100vh - 9.4rem);
 }
 
 .navwrap .foreground {
@@ -29,6 +30,7 @@
     height: 2rem;
     color: white;
     width: auto;
+    margin-left: 2.5rem;
 }
 
 .navwrap nav .links {
