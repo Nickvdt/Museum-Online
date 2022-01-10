@@ -1,17 +1,17 @@
 .exhibition {
-    background: black;
+  background: black;
 }
 
 .exhibition nav {
-    display: flex;
+  display: flex;
 }
 
 .exhibition nav .item {
-    color: white;
-    padding: 3.5rem 1.875rem;
-    margin-right: 2rem;
-    text-decoration: none;
-    /* flex: 1 1 0; */
+  color: white;
+  padding: 3.5rem 1.875rem;
+  margin-right: 2rem;
+  text-decoration: none;
+  /* flex: 1 1 0; */
 }
 
 /* .exhibition nav .item:first-of-type {
@@ -22,106 +22,139 @@
 } */
 
 .exhibition nav .item:hover .title {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .exhibition nav .item.active .title {
-    color: var(--yellow);
+  color: var(--yellow);
 }
 
 .exhibition nav .item .title {
-    font-size: 1.25rem;
-    text-transform: uppercase;
-    font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .exhibition nav .item .subtitle {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .exhibition .row {
-    display: grid;
-    gap: 0;
-    grid-template-columns: auto calc(var(--container-width) / 2) 50vw;
+  display: grid;
+  gap: 0;
+  grid-template-columns: auto calc(var(--container-width) / 2) 50vw;
 }
 .exhibition .row.alt {
-    grid-template-columns: 50vw calc(var(--container-width) / 2) auto;
+  grid-template-columns: 50vw calc(var(--container-width) / 2) auto;
 }
 
 @media screen and (max-width: 1280px) {
-    /* TODO Figure out specificity issue */
-    .exhibition .row .content {
-        grid-column: 1 !important;
-    }
-    .exhibition .row.alt .content {
-        grid-column: 2 !important;
-    }
-    .exhibition .row {
-        grid-template-columns: 1fr 50vw;
-    }
-    .exhibition .row.alt {
-        grid-template-columns: 50vw 1fr;
-    }
+  /* TODO Figure out specificity issue */
+  .exhibition .row .content {
+    grid-column: 1 !important;
+  }
+  .exhibition .row.alt .content {
+    grid-column: 2 !important;
+  }
+  .exhibition .row {
+    grid-template-columns: 1fr 50vw;
+  }
+  .exhibition .row.alt {
+    grid-template-columns: 50vw 1fr;
+  }
 }
 
+@media screen and (max-width: 680px) {
+  .exhibition nav {
+    flex-direction: column;
+  }
+  .exhibition nav .item {
+    color: white;
+    padding: 1.5rem 1.875rem;
+  }
+
+  .exhibition .row {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .exhibition .row.alt {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr;
+  }
+  .exhibition .row .content {
+    grid-row: 2;
+    grid-column: 1 !important;
+  }
+  .exhibition .row .image {
+    grid-row: 1;
+    grid-column: 1 !important;
+  }
+  .exhibition .row.alt .content {
+    grid-row: 2;
+    grid-column: 1 !important;
+  }
+  .exhibition .row.alt .image {
+    grid-row: 1;
+    grid-column: 1 !important;
+  }
+}
 
 .exhibition .row .content {
-    flex: 1 1 0px;
-    color: white;
-    padding: 1.25rem 2rem;
-    padding-right: 4rem;
-    grid-column: 2;
+  flex: 1 1 0px;
+  color: white;
+  padding: 1.25rem 2rem;
+  padding-right: 4rem;
+  grid-column: 2;
 }
 .exhibition .row.alt .content {
-    grid-column: 2;
+  grid-column: 2;
 }
 
 .exhibition .row .image {
-    background-size: cover;
-    background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 .exhibition .row.alt .image {
-    grid-column: 1;
+  grid-column: 1;
 }
-
 
 .exhibition .row .content .title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
 }
 .exhibition .row .content .subtitle {
-    font-size: 1.25rem;
-    font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 .exhibition .row .content p {
-    font-size: 1.25rem;
-    line-height: 1.54508497186rem; 
-    padding: 1.5rem 0;
+  font-size: 1.25rem;
+  line-height: 1.54508497186rem;
+  padding: 1.5rem 0;
 }
 
 .exhibition .row .content .buttons {
-    margin-top: 4rem;
-    margin-bottom: 3rem;
-    font-size: 1.25rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.25rem;
 }
 
 .exhibition .row .content .buttons .action:hover {
-    background-color: var(--yellow-dark)
+  background-color: var(--yellow-dark);
 }
 
 .exhibition .row .content .buttons .action {
-    text-decoration: none;
-    padding: 1rem 1.5rem;
-    background-color: var(--yellow);
-    color: var(--offblack);
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: var(--yellow);
+  color: var(--offblack);
 
-    font-weight: bold;
+  font-weight: bold;
 }
 .exhibition .row .content .buttons .secondary {
-    margin-left: 1rem;
-    color: white;
+  margin-left: 1rem;
+  color: white;
 }
 .exhibition .row .content .buttons .secondary:hover {
-    color: rgb(226, 226, 226);
+  color: rgb(226, 226, 226);
 }
