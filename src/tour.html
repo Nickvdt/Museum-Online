@@ -1,25 +1,45 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tour</title>
-    <link rel="stylesheet" href="assets/css/tour.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/tour.css" />
+  </head>
+  <body>
     <div id="container">
-      
-        <img id="myImage"src="assets/img/0.jpg" height="600px" alt="foto's Tour">
-        <div id="myInteraction">
-            <div id="myTitle">Hier komt de zaal nummers</div>
-            <input type="text" id="myInput" autocomplete="off">
-            <input type="button" value="voer in" onclick="getInput()">
-            <img src="assets/img/minimap_small.jpg" alt="">
+      <div>
+        <img
+          id="myImage"
+          src="assets/img/0.jpg"
+          height="600px"
+          alt="foto's Tour"
+        />
+        <div id="myImageButtons">
+          <button>1</button>
+          <button>2</button>
         </div>
+      </div>
+      <div id="myInteraction">
+        <h1 id="myTitle">Hier komt de zaal nummers</h1>
+        <input type="text" id="myInput" autocomplete="off" />
+        <input type="button" value="voer in" onclick="getInput()" />
+        <div class="minimap">
+          <canvas id="minimap" width="400px" height="283px"></canvas>
+          <div style="display: none">
+            <img
+              id="minimapImg"
+              src="assets/img/minimap_small.jpg"
+              width="400"
+              height="283"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <button><a href="index.html">Back</a></button>
+    <script src="assets/js/maplocations.js"></script>
+    <script src="assets/js/minimap.js"></script>
     <script src="assets/js/tour.js"></script>
-</body>
+  </body>
 </html>
-
-

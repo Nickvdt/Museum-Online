@@ -1,67 +1,42 @@
 const myTitle = document.getElementById("myTitle");
 const myImage = document.getElementById("myImage");
 const myInput = document.getElementById("myInput");
+const myImageButtons = document.getElementById("myImageButtons");
 
-let locaties = [
-    {
-        "titel":"plaats 0",
-        "image":"assets/img/0.jpg"
-    },
-    {
-        "titel":"plaats 1",
-        "image":"assets/img/1.jpg"
-    },
-    {
-        "titel":"plaats 2",
-        "image":"assets/img/2.jpg"
-    },
-    {
-        "titel":"plaats 3",
-        "image":"assets/img/3.jpg"
-    },
-    {
-        "titel":"plaats 4",
-        "image":"assets/img/4.jpg"
-    },
-    {
-        "titel":"plaats 5",
-        "image":"assets/img/5.jpg"
-    },
-    {
-        "titel":"plaats 6",
-        "image":"assets/img/6.jpg"
-    },
-    {
-        "titel":"plaats 7",
-        "image":"assets/img/7.jpg"
-    },
-    {
-        "titel":"plaats 8",
-        "image":"assets/img/8.jpg"
-    },
-    {
-        "titel":"plaats 9",
-        "image":"assets/img/9.jpg"
-    },
-    {
-        "titel":"plaats 10",
-        "image":"assets/img/10.jpg"
-    },
-    {
-        "titel":"plaats 11",
-        "image":"assets/img/11.jpg"
+function show(index) {
+  myTitle.innerHTML = locaties[index].titel;
+  myImage.src = locaties[index].image;
+}
+
+function getInput() {
+  updateRoom(myInput.value.trim());
+}
+
+function updateRoom(inp) {
+  let roomIndex = getRoomIndex(inp);
+  highlightArea(roomIndex);
+  myInput.value = "";
+  myInput.focus();
+  let loc = maplocs[roomIndex];
+  if (loc.title) {
+    myTitle.textContent = `${loc.title}`;
+  } else {
+    myTitle.textContent = `Je bent nu in kamer: ${maplocs[roomIndex].id}`;
+  }
+  myImageButtons.innerHTML = "";
+  if (loc.images.length > 1) {
+    for (imgI in loc.images) {
+      let img = loc.images[imgI];
+      let btn = document.createElement("button");
+      btn.dataset.src = img;
+      btn.textContent = imgI;
+      btn.addEventListener("click", (e) => {
+        myImage.setAttribute("src", e.target.dataset.src);
+      });
+      myImageButtons.appendChild(btn);
     }
-];
-
-function show(index){
-    myTitle.innerHTML = locaties[index].titel;
-    myImage.src = locaties[index].image;
+  }
+  myImage.setAttribute("src", loc.images[0] || "assets/img/placeholder.jpg");
 }
 
-function getInput(){
-    show(myInput.value);
-    // console.log(myInput.value)
-    myInput.value = "";
-    myInput.focus();
-}
-
+updateRoom("1");

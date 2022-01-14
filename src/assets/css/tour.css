@@ -1,17 +1,40 @@
-body{
-    background-color: brown;
+body {
+  background-color: brown;
 }
 
-#container{
-    background-color: grey;
-    width: 1025px;
-    height: 600px;
-    margin: 50px auto auto auto;
-    display: grid;
-    grid-template-columns: auto auto;
-    border: inset 2px gray;
+#container {
+  background-color: grey;
+  width: 1025px;
+  height: 600px;
+  margin: 50px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: inset 2px gray;
 }
 
-#myInteraction{
-    padding: 10px;
+#myTitle {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+}
+
+#myInteraction {
+  padding: 10px;
+}
+
+#myImage {
+  max-width: 100%;
+}
+
+#minimap {
+  cursor: pointer;
+}
+
+#myImageButtons {
+  margin-top: 0.5rem;
+}
+
+#myImageButtons button {
+  margin-right: 0.5rem;
+  padding: 0.8rem;
+  cursor: pointer;
 }
