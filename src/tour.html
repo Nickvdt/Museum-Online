@@ -1,18 +1,25 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Tour Rijksmuseum</title>
-  </head>
-  <body>
-    <div style="max-width: 1024px; margin: 0 auto">
-      <h1>
-        De online tour is op dit moment in onderhoud / The online tour is
-        currently under maintenance
-      </h1>
-      <a href="index.html">Back</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="stylesheet" href="assets/css/tour.css">
+</head>
+<body>
+    <div id="container">
+      
+        <img id="myImage"src="assets/img/0.jpg" height="600px" alt="foto's Tour">
+        <div id="myInteraction">
+            <div id="myTitle">Hier komt de zaal nummers</div>
+            <input type="text" id="myInput" autocomplete="off">
+            <input type="button" value="voer in" onclick="getInput()">
+            <img src="assets/img/minimap_small.jpg" alt="">
+        </div>
     </div>
-  </body>
+    <button><a href="index.html">Back</a></button>
+    <script src="assets/js/tour.js"></script>
+</body>
 </html>
+
+
