@@ -1,15 +1,16 @@
 body {
-  background-color: brown;
+  background-color: #080a0f;
 }
 
 #container {
   background-color: grey;
-  width: 1025px;
-  height: 600px;
+  max-width: 1024px;
   margin: 50px auto auto auto;
   display: grid;
   grid-template-columns: auto auto;
-  border: inset 2px gray;
+  border: solid 2px black;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 #myTitle {
@@ -35,6 +36,10 @@ body {
 
 #myImageButtons button {
   margin-right: 0.5rem;
-  padding: 0.8rem;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
+}
+
+#myInteraction canvas {
+  margin-top: 1rem;
 }

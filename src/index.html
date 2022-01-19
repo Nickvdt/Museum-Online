@@ -30,7 +30,7 @@
               href="https://www.rijksmuseumshop.nl/nl?gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZB8YtS3HkVPwc-n-gvLvijkFyBm9jdbxEMEt7diDaoR5HkRwWByWpxoCfuIQAvD_BwE"
               >Giftshop</a
             >
-            <a href="eng.html">NL/ENG</a>
+            <a href="eng.html">English</a>
           </div>
         </nav>
       </div>
@@ -39,74 +39,214 @@
     <main>
       <section class="exhibition" id="exhibitions">
         <nav class="container">
-          <a class="item active" href="#">
+          <a
+            class="item active"
+            id="exhibitionOneLink"
+            onClick="showExhib(0)"
+            href="#exhibitions"
+          >
             <div class="title">Aziatisch Paviljoen</div>
             <div class="subtitle">t/m 10 april 2022</div>
           </a>
-          <a class="item" href="#">
+          <a
+            class="item"
+            id="exhibitionTwoLink"
+            onClick="showExhib(1)"
+            href="#exhibitions"
+          >
             <div class="title">Kikkers en Kaaskoppen</div>
             <div class="subtitle">t/m 16 mei</div>
           </a>
-          <a class="item" href="#">
+          <a
+            class="item"
+            id="exhibitionThreeLink"
+            onClick="showExhib(2)"
+            href="#exhibitions"
+          >
             <div class="title">Operation night watch</div>
             <div class="subtitle">De Nachtwacht van dichtbij</div>
           </a>
         </nav>
-        <div class="row">
-          <div class="half content">
-            <div class="title">Tentoonstelling: Aziatisch Paviljoen</div>
-            <div class="subtitle">t/m 10 april 2022</div>
-            <p>
-              Wereldberoemde Chinese Song-keramiek, Japanse mannenkimono’s en de
-              vroegste foto’s van India. Elk half jaar tonen de conservatoren
-              met nieuwe presentaties het beste uit de collectie Aziatische
-              kunst van het Rijksmuseum. En natuurlijk houden de Japanse
-              Tempelwachters altijd een oogje in het zeil.
-            </p>
+        <!-- Exhibition 1 -->
+        <div id="exhibitionOne" class="">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Tentoonstelling: Aziatisch Paviljoen</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Wereldberoemde Chinese Song-keramiek, Japanse mannenkimono’s en
+                de vroegste foto’s van India. Elk half jaar tonen de
+                conservatoren met nieuwe presentaties het beste uit de collectie
+                Aziatische kunst van het Rijksmuseum. En natuurlijk houden de
+                Japanse Tempelwachters altijd een oogje in het zeil.
+              </p>
 
-            <div class="buttons">
-              <a
-                href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/aziatisch-paviljoen"
-                class="action"
-              >
-                Bezoeken
-              </a>
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/aziatisch-paviljoen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/65b66683-1534-45d7-8f99-de3699cdeed7.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/1ffdf8d8-c4c2-4e7b-9602-b2d576e57777.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">Tentoonstelling: Kikkers en Kaaskoppen</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Koning Kaas, Gebroeders de Witt als een vos en een wolf, een
+                Hollandse cupido, allemaal spotprenten. Voor een lach en
+                kritiek. We hebben er meer dan 7000 in onze collectie! Je kunt
+                nu voor het eerst een selectie zien van deze grappige, kritische
+                en satirische werken.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/kikkers-en-kaaskoppen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
             </div>
           </div>
-          <div
-            class="half image"
-            style="
-              margin-left: 0.5vw;
-              background-image: url(assets/img/65b66683-1534-45d7-8f99-de3699cdeed7.jpg);
-            "
-          ></div>
         </div>
-        <div class="row alt">
-          <div
-            class="half image"
-            style="
-              margin-right: 0.5vw;
-              background-image: url(assets/img/1ffdf8d8-c4c2-4e7b-9602-b2d576e57777.jpg);
-            "
-          ></div>
-          <div class="half content">
-            <div class="title">Tentoonstelling: Kikkers en Kaaskoppen</div>
-            <div class="subtitle">t/m 10 april 2022</div>
-            <p>
-              Koning Kaas, Gebroeders de Witt als een vos en een wolf, een
-              Hollandse cupido, allemaal spotprenten. Voor een lach en kritiek.
-              We hebben er meer dan 7000 in onze collectie! Je kunt nu voor het
-              eerst een selectie zien van deze grappige, kritische en satirische
-              werken.
-            </p>
+        <!-- Exhibition 2 -->
+        <div id="exhibitionTwo" class="hidden">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Tentoonstelling: Kikkers en Kaaskoppen</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Wereldberoemde Chinese Song-keramiek, Japanse mannenkimono’s en
+                de vroegste foto’s van India. Elk half jaar tonen de
+                conservatoren met nieuwe presentaties het beste uit de collectie
+                Aziatische kunst van het Rijksmuseum. En natuurlijk houden de
+                Japanse Tempelwachters altijd een oogje in het zeil.
+              </p>
 
-            <div class="buttons">
-              <a
-                href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/kikkers-en-kaaskoppen"
-                class="action"
-              >
-                Bezoeken
-              </a>
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/aziatisch-paviljoen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/65b66683-1534-45d7-8f99-de3699cdeed7.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/1ffdf8d8-c4c2-4e7b-9602-b2d576e57777.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">Tentoonstelling: Kikkers en Kaaskoppen</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Koning Kaas, Gebroeders de Witt als een vos en een wolf, een
+                Hollandse cupido, allemaal spotprenten. Voor een lach en
+                kritiek. We hebben er meer dan 7000 in onze collectie! Je kunt
+                nu voor het eerst een selectie zien van deze grappige, kritische
+                en satirische werken.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/kikkers-en-kaaskoppen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Exhibition 3 -->
+        <div id="exhibitionThree" class="hidden">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Tentoonstelling: Operation night watch</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Wereldberoemde Chinese Song-keramiek, Japanse mannenkimono’s en
+                de vroegste foto’s van India. Elk half jaar tonen de
+                conservatoren met nieuwe presentaties het beste uit de collectie
+                Aziatische kunst van het Rijksmuseum. En natuurlijk houden de
+                Japanse Tempelwachters altijd een oogje in het zeil.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/aziatisch-paviljoen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/65b66683-1534-45d7-8f99-de3699cdeed7.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/1ffdf8d8-c4c2-4e7b-9602-b2d576e57777.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">Tentoonstelling: Kikkers en Kaaskoppen</div>
+              <div class="subtitle">t/m 10 april 2022</div>
+              <p>
+                Koning Kaas, Gebroeders de Witt als een vos en een wolf, een
+                Hollandse cupido, allemaal spotprenten. Voor een lach en
+                kritiek. We hebben er meer dan 7000 in onze collectie! Je kunt
+                nu voor het eerst een selectie zien van deze grappige, kritische
+                en satirische werken.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/nl/zien-en-doen/tentoonstellingen/kikkers-en-kaaskoppen"
+                  class="action"
+                >
+                  Bezoeken
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -227,21 +367,39 @@
         <div class="footer__section">
           <div>Algemeen</div>
           <ul>
-            <li><a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden">Algemene voorwaarden</a></li>
-            <li><a href="https://www.rijksmuseum.nl/nl/footer/privacybeleid">Privacybeleid</a></li>
-            <li><a href="https://www.rijksmuseum.nl/nl/footer/cookiebeleid">Cookiebeleid</a></li>
-            <li><a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden">Herroepingsrecht</a></li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden"
+                >Algemene voorwaarden</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/privacybeleid"
+                >Privacybeleid</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/cookiebeleid"
+                >Cookiebeleid</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden"
+                >Herroepingsrecht</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer__section">
           <div>Contactgegevens</div>
           <ul>
-            <li><a href="mailto:info@rijksmuseum.nl">info@rijksmuseum.nl</a></li>
+            <li>
+              <a href="mailto:info@rijksmuseum.nl">info@rijksmuseum.nl</a>
+            </li>
             <li><a href="tel:+310206747000">+31 (0) 20 6747 000</a></li>
           </ul>
         </div>
       </div>
     </footer>
-    <script src="assets/js/slideshow.js"></script>
+    <script src="assets/js/index.js"></script>
   </body>
 </html>

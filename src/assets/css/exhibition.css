@@ -64,6 +64,10 @@
   }
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media screen and (max-width: 680px) {
   .exhibition nav {
     flex-direction: column;
