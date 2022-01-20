@@ -61,7 +61,7 @@ const maplocs = [
     y: 227,
     width: 81,
     height: 14,
-    images: ["assets/img/tour/Zaal2.10.jpg"],
+    images: ["assets/img/tour/Zaal2.10.jpg", "assets/img/tour/Zaal2.11.jpg", "assets/img/tour/Zaal2.12.jpg", "assets/img/tour/Zaal2.13.jpg", "assets/img/tour/Zaal2.14.jpg"],
   },
   {
     id: "2.8",
@@ -201,7 +201,7 @@ const maplocs = [
     y: 227,
     width: 81,
     height: 15,
-    images: ["assets/img/tour/Zaal2.24.jpg"],
+    images: ["assets/img/tour/Zaal2.24.jpg", "assets/img/tour/Zaal2.25.jpg", "assets/img/tour/Zaal2.26.jpg", "assets/img/tour/Zaal2.28.jpg"],
   },
   {
     id: "2.22",
