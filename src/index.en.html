@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rijksmuseum</title>
+    <link rel="stylesheet" href="assets/css/global.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/exhibition.css" />
+    <link rel="stylesheet" href="assets/css/reviews.css" />
+    <link rel="stylesheet" href="assets/css/museum.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="navwrap">
+      <img src="assets/img/rijksmuseum.jpg" id="slideimage" alt="" />
+      <div class="foreground">
+        <nav class="container">
+          <img class="logo" src="assets/img/rijksmuseum.svg" alt="" />
+          <div class="links">
+            <a href="#exhibitions">Exhibitions</a>
+            <a href="#museum">History</a>
+            <a href="https://www.rijksmuseum.nl/nl/tickets/artikelen"
+              >Tickets</a
+            >
+            <a href="tour.html">Tour</a>
+            <a
+              href="https://www.rijksmuseumshop.nl/nl?gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZB8YtS3HkVPwc-n-gvLvijkFyBm9jdbxEMEt7diDaoR5HkRwWByWpxoCfuIQAvD_BwE"
+              >Giftshop</a
+            >
+            <a href="index.html">Dutch</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- END NAVIGATION -->
+    <main>
+      <section class="exhibition" id="exhibitions">
+        <nav class="container">
+          <a
+            class="item active"
+            id="exhibitionOneLink"
+            onClick="showExhib(0)"
+            href="#exhibitions"
+          >
+            <div class="title">Remember me</div>
+            <div class="subtitle">More than 100 Renaissance portraits</div>
+          </a>
+          <a
+            class="item"
+            id="exhibitionTwoLink"
+            onClick="showExhib(1)"
+            href="#exhibitions"
+          >
+            <div class="title">Henk Wildschut</div>
+            <div class="subtitle">Document Nederland</div>
+          </a>
+          <a
+            class="item"
+            id="exhibitionThreeLink"
+            onClick="showExhib(2)"
+            href="#exhibitions"
+          >
+            <div class="title">Ed van der Elsken</div>
+            <div class="subtitle">Crazy World</div>
+          </a>
+        </nav>
+        <!-- Exhibition 1 -->
+        <div id="exhibitionOne" class="">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Remember me</div>
+              <div class="subtitle">
+                More than 100 Renaissance portraits, from Dürer to Sofonisba
+              </div>
+              <p>
+                Do you see me? And how do you see me? Powerful emperors,
+                flamboyant aristocrats and well-to-do citizens. Throughout the
+                15th and 16th centuries, increasing numbers of people had
+                themselves immortalised by the artists of the day. Remember me
+                is about ambition, longing, loss – and how people want to be
+                remembered.
+              </p>
+
+              <p>
+                The desire to remember and to be remembered is a very old and
+                human need. Since antiquity men has been making portraits, and
+                the selfie is now an indispensable part of everyday life.
+                Somewhere in between, around 1500, the first blossoming of
+                portraiture in Europe began.
+              </p>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/65b66683-1534-45d7-8f99-de3699cdeed7.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/1ffdf8d8-c4c2-4e7b-9602-b2d576e57777.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">How do you see me?</div>
+              <!-- <div class="subtitle">t/m 10 april 2022</div> -->
+              <p>
+                Then, as now, the sitters were keen to be presented in the most
+                favourable manner possible. All aspects of the composition – the
+                facial expression, symbolism, pose, background and clothing –
+                were carefully planned out. Where the one prioritised beauty,
+                the other focused on exuding authority. Charles V, Holy Roman
+                Emperor, for example, emphatically highlighted his power around
+                1553 by having himself immortalised as a Roman Emperor. Remember
+                me sheds light on how people wanted to be seen, in themes such
+                as beauty, authority, ambition, love, family, knowledge and
+                faith. How would you like to be remembered?
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/remember-me"
+                  class="action"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Exhibition 2 -->
+        <div id="exhibitionTwo" class="hidden">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Henk Wildschut</div>
+              <div class="subtitle">Document Nederland</div>
+              <p>
+                The coronavirus has had the Netherlands in its grip since March
+                2020, and photographer Henk Wildschut has been documenting the
+                impact of Covid-19 on life in Dutch society, and the country’s
+                approach to coping with the virus.
+              </p>
+              <div class="subtitle">Distance</div>
+              <p>
+                Rather than engaging with the distractions of the day, Wildschut
+                chooses to keep his distance and use his photography to reveal
+                patterns. In this case the notion of distance is central to his
+                subject matter, in a very literal sense. It’s also a subject
+                associated with numbers, large numbers – of facemasks and other
+                items of protective gear. Here, just as for Our Daily Bread, his
+                previous Document Nederland commission in 2013, Wildschut’s
+                lucid, ‘clinical’ eye captures compelling images that testify to
+                the emptiness, distance, silence and scope.
+              </p>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/henk_wildeschut_1.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/henk_wildeschut_2.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">The human face</div>
+              <!-- <div class="subtitle">t/m 10 april 2022</div> -->
+              <p>
+                Wildschut also reveals the human face to this crisis – the face
+                behind the seemingly impersonal systems and high-tech equipment.
+                These portraits are interspersed among the images of scenes
+                outdoors, and indoors at laboratories, the RIVM public health
+                body, and press conferences. Together they reflect how the
+                government is trying to combat the virus, the consequences in
+                our living environment, and the goings on behind the scenes.
+              </p>
+
+              <div class="subtitle">Appearance</div>
+
+              <p>
+                In his images capturing distances and enclosed and outdoor
+                spaces, Henk Wildschut reveals a country whose appearance has
+                been temporarily altered. But the photographer does not pass
+                judgement. He keeps his distance, to be able to show the volume
+                of the crowds of demonstrators; the volume of the supplies of
+                protective equipment – providing us with a clear vision of the
+                extent of all the measures taken, and of all the protests
+                against them.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/henk-wildschut"
+                  class="action"
+                >
+                  Read more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Exhibition 3 -->
+        <div id="exhibitionThree" class="hidden">
+          <div class="row">
+            <div class="half content">
+              <div class="title">Ed van der Elsken</div>
+              <div class="subtitle">Crazy World</div>
+              <p>
+                A glimpse into the working methods of one of the best-known
+                photographers in The Netherlands. You can hardly get any closer
+                to the artist.
+              </p>
+            </div>
+            <div
+              class="half image"
+              style="
+                margin-left: 0.5vw;
+                background-image: url(assets/img/crazy_world_2.jpg);
+              "
+            ></div>
+          </div>
+          <div class="row alt">
+            <div
+              class="half image"
+              style="
+                margin-right: 0.5vw;
+                background-image: url(assets/img/crazy_world_1.jpg);
+              "
+            ></div>
+            <div class="half content">
+              <div class="title">About</div>
+              <!-- <div class="subtitle">t/m 10 april 2022</div> -->
+              <p>
+                The Rijksmuseum and Nederlands Fotomuseum’s joint acquisition of
+                Ed van der Elskens’ artistic estate at the end of 2019 has
+                provided the ideal opportunity to shed light on the working
+                practice of one of the Netherlands’ most famous photographers.
+                The display of more than 100 objects – including prints, photo
+                book designs and contact sheets – reveals Van der Elsken’s hand
+                in his photographs, printing and experimentation. This
+                exhibition has come about through a partnership with Nederlands
+                Fotomuseum in Rotterdam and is made possible with the support of
+                Fonds21. The collection was for a large part donated by Anneke
+                Hilhorst, and partly purchased with the support of the Mondriaan
+                Fund, the Rembrandt Association (thanks in part to its dedicated
+                Photography and Video Fund and Dura Kunstfonds), BankGiro
+                Lottery participants, the Paul Huf Fund/Rijksmuseum Fund and the
+                Marque Joosten & Eduard Planting Fund/Rijksmuseum Fund.
+              </p>
+
+              <div class="buttons">
+                <a
+                  href="https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/ed-van-der-elsken"
+                  class="action"
+                >
+                  Learn more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container reviews__wrapper">
+          <div class="reviews__review">
+            <div class="reviews__review-author">Johan Oldenhage</div>
+            <div class="reviews__review-info">
+              <span class="reviews__review-date">17-8-2021 ⭐⭐⭐⭐⭐</span>
+              <!-- <span class="reviews__review-rating">4/5</span> -->
+            </div>
+            <p class="review__review-body">
+              Beautiful building, definitely worth a visit! The building itself
+              can already be considered an art piece, beautiful details and
+              sparkling colors. The art collection and exhibitions are
+              fantastic, I haven't seen everything yet, I'm going to need a
+              couple more visits for that. The service is also great.
+            </p>
+          </div>
+          <div class="reviews__review">
+            <div class="reviews__review-author">Ursula Millarson</div>
+            <div class="reviews__review-info">
+              <span class="reviews__review-date">12-7-2021 ⭐⭐⭐⭐</span>
+              <!-- <span class="reviews__review-rating">4/5</span> -->
+            </div>
+            <p class="review__review-body">
+              Awesome museum, the exhibition about slavery is definitely worth a
+              visit. And don't forget to visit Rembrandt while you're there.
+            </p>
+          </div>
+          <div class="reviews__review">
+            <div class="reviews__review-author">Ronald Hoets</div>
+            <div class="reviews__review-info">
+              <span class="reviews__review-date">25-10-2021 ⭐⭐⭐⭐⭐</span>
+              <!-- <span class="reviews__review-rating">4/5</span> -->
+            </div>
+            <p class="review__review-body">
+              Beautiful museum in a historic building. Really big collection
+              with not only the masterpieces but the entire collection. De
+              premade routes aren't always clear and you don't get to see
+              everything. If the weather is good I recommend going to the museum
+              garden.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="museum_wrap" id="museum">
+        <div class="museum container">
+          <div class="museum__title">Rijksmuseum</div>
+          <div class="museum__subtitle">History</div>
+
+          <p>
+            In 1806, Louis Napoleon Bonaparte became the first king of Kingdom
+            of Holland. The name of the museum was changed to Royal Museum. In
+            1808 the Museum moved to Amsterdam. It museum was then housed on the
+            top floor of the Palace on Dam Square. The museum also got a new
+            director, Cornelius Apostool. After William I became king of the
+            Netherlands, the name changed to Rijksmuseum. In 1817 the museum
+            moved to another location in Amsterdam. A collection of prints
+            became also part of the museum. In 1854 the Dutch banker Adriaan van
+            der Hoop passed on his collection to the museum.
+          </p>
+
+          <p>
+            In 1855 the new building for the Rijksmuseum was completed. A night
+            before the Second World War, all important paintings to safety. The
+            paintings were stored in the caves of the Sint Petersberg near
+            Maastricht. To not to notice, there was one from 1939 to 1940
+            exhibition on contemporary art and from 1942 part of the collection
+            of the Dutch Railway Museum.
+          </p>
+
+          <a
+            href="https://nl.trustpilot.com/review/www.rijksmuseum.nl"
+            class="button reviewbutton"
+            >Trustpilot Reviews</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__section">
+          <div>Visiting Hours</div>
+          <ul>
+            <li>Open every day 9am - 5pm</li>
+          </ul>
+          <div>Location</div>
+          <ul>
+            <li>Museumstraat 1</li>
+            <li>1071 XX Amsterdam</li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <div>Navigatie</div>
+          <ul>
+            <li><a href="#">Museum</a></li>
+            <li><a href="#exhibitions">Exhibitions</a></li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/tickets/artikelen"
+                >Tickets</a
+              >
+            </li>
+            <li><a href="tour.html">Online Tour</a></li>
+            <li>
+              <a
+                href="https://www.rijksmuseumshop.nl/nl?gclid=CjwKCAiAh_GNBhAHEiwAjOh3ZB8YtS3HkVPwc-n-gvLvijkFyBm9jdbxEMEt7diDaoR5HkRwWByWpxoCfuIQAvD_BwE"
+                >Giftshop</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <div>General</div>
+          <ul>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden"
+                >Terms of Conditions</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/privacybeleid"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/cookiebeleid"
+                >Cookie Policy</a
+              >
+            </li>
+            <li>
+              <a href="https://www.rijksmuseum.nl/nl/footer/voorwaarden"
+                >Right of withdrawal</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <div>Contact</div>
+          <ul>
+            <li>
+              <a href="mailto:info@rijksmuseum.nl">info@rijksmuseum.nl</a>
+            </li>
+            <li><a href="tel:+310206747000">+31 (0) 20 6747 000</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
