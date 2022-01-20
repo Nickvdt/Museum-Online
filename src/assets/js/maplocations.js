@@ -5,7 +5,7 @@ const maplocs = [
     y: 68,
     width: 30,
     height: 19,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.2.jpg"],
   },
   {
     id: "2.3",
@@ -13,7 +13,7 @@ const maplocs = [
     y: 87,
     width: 31,
     height: 27,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.3.jpg"],
   },
   {
     id: "2.4",
@@ -21,7 +21,7 @@ const maplocs = [
     y: 114,
     width: 31,
     height: 27,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.4.jpg"],
   },
   {
     id: "2.5",
@@ -29,7 +29,7 @@ const maplocs = [
     y: 141,
     width: 32,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.5.jpg"],
   },
   {
     id: "2.6",
@@ -37,7 +37,7 @@ const maplocs = [
     y: 169,
     width: 32,
     height: 27,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.6.jpg"],
   },
   {
     id: "2.7",
@@ -45,7 +45,7 @@ const maplocs = [
     y: 196,
     width: 32,
     height: 18,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.7.jpg"],
   },
   {
     id: "2.9",
@@ -53,7 +53,7 @@ const maplocs = [
     y: 214,
     width: 45,
     height: 34,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.9.jpg"],
   },
   {
     id: "2.10-2.14",
@@ -61,7 +61,7 @@ const maplocs = [
     y: 227,
     width: 81,
     height: 14,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.10.jpg"],
   },
   {
     id: "2.8",
@@ -69,7 +69,7 @@ const maplocs = [
     y: 196,
     width: 65,
     height: 30,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.8.jpg"],
   },
   {
     id: "2.1",
@@ -77,7 +77,7 @@ const maplocs = [
     y: 86,
     width: 81,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.1.jpg"],
   },
   {
     id: "1",
@@ -86,7 +86,7 @@ const maplocs = [
     width: 111,
     height: 35,
     title: "Voorhal (gebruik de map om te navigeren)",
-    images: ["assets/img/ship.jpg", "assets/img/inside.jpg"],
+    images: ["assets/img/tour/1.jpg"],
   },
   {
     id: "2",
@@ -94,7 +94,7 @@ const maplocs = [
     y: 197,
     width: 55,
     height: 30,
-    images: [""],
+    images: ["assets/img/tour/2.jpg"],
   },
   {
     id: "3",
@@ -102,7 +102,7 @@ const maplocs = [
     y: 169,
     width: 55,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/3.jpg"],
   },
   {
     id: "4",
@@ -110,7 +110,7 @@ const maplocs = [
     y: 141,
     width: 55,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/4.jpg"],
   },
   {
     id: "5",
@@ -119,7 +119,7 @@ const maplocs = [
     width: 55,
     height: 28,
     title: "Eregallerij",
-    images: [""],
+    images: ["assets/img/tour/5.jpg"],
   },
   {
     id: "6",
@@ -128,7 +128,7 @@ const maplocs = [
     width: 57,
     height: 42,
     title: "Nachtwacht",
-    images: [""],
+    images: ["assets/img/tour/6.jpg"],
   },
   {
     id: "7",
@@ -137,7 +137,7 @@ const maplocs = [
     width: 57,
     height: 30,
     title: "Beeldengallerij",
-    images: [""],
+    images: ["assets/img/tour/7.jpg"],
   },
   {
     id: "2.15",
@@ -145,15 +145,7 @@ const maplocs = [
     y: 86,
     width: 81,
     height: 28,
-    images: [""],
-  },
-  {
-    id: "2.16",
-    x: 332,
-    y: 68,
-    width: 31,
-    height: 18,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.15.jpg"],
   },
   {
     id: "2.17",
@@ -161,7 +153,7 @@ const maplocs = [
     y: 86,
     width: 32,
     height: 27,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.17.jpg"],
   },
   {
     id: "2.18",
@@ -169,7 +161,7 @@ const maplocs = [
     y: 113,
     width: 32,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.18.jpg"],
   },
   {
     id: "2.19",
@@ -177,7 +169,7 @@ const maplocs = [
     y: 141,
     width: 32,
     height: 28,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.19.jpg"],
   },
   {
     id: "2.20",
@@ -185,7 +177,7 @@ const maplocs = [
     y: 169,
     width: 31,
     height: 29,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.20.jpg"],
   },
   {
     id: "2.21",
@@ -193,7 +185,7 @@ const maplocs = [
     y: 198,
     width: 31,
     height: 15,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.21.jpg"],
   },
   {
     id: "2.23",
@@ -201,7 +193,7 @@ const maplocs = [
     y: 213,
     width: 46,
     height: 35,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.23.jpg"],
   },
   {
     id: "2.24-2.28",
@@ -209,7 +201,7 @@ const maplocs = [
     y: 227,
     width: 81,
     height: 15,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.24.jpg"],
   },
   {
     id: "2.22",
@@ -217,15 +209,15 @@ const maplocs = [
     y: 197,
     width: 65,
     height: 29,
-    images: [""],
+    images: ["assets/img/tour/Zaal2.22.jpg"],
   },
   {
-    id: "library",
+    id: "2.16",
     x: 333,
     y: 21,
-    width: 47,
-    height: 46,
+    width: 31,
+    height: 66,
     title: "Bibliotheek",
-    images: [""],
+    images: ["assets/img/tour/library.jpg"],
   },
 ];
