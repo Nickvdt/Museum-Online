@@ -5,6 +5,8 @@ const images = [
     "assets/img/rijksmuseum.jpg",
     "assets/img/inside.jpg",
     "assets/img/ship.jpg",
+    "assets/img/nacht.jpg",
+    "assets/img/nacht2.jpg"
 ]
 let imgIndex = 0
 
